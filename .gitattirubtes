@@ -1,0 +1,8 @@
+*.docx diff=openxml
+*.xlsx diff=openxml
+*.pptx diff=openxml
+*.xls  diff=openxml
+*.doc  diff=openxml
+*.ppt  diff=openxml
+*.odt diff=odt
+
