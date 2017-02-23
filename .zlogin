@@ -1,0 +1,1 @@
+/Users/y_fujikawa/.zprezto/runcoms/zlogin
