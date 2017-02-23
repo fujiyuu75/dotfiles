@@ -1,3 +1,4 @@
+" ref. http://qiita.com/mfujimori/items/9fd41bcd8d1ce9170301
 " setting
 "文字コードをUFT-8に設定
 set fenc=utf-8
@@ -61,3 +62,7 @@ set wrapscan
 set hlsearch
 " ESC連打でハイライト解除
 nmap <Esc><Esc> :nohlsearch<CR><Esc>
+
+" 設定系
+" viminfoの場所をdotfilesにする。
+set viminfo+=n~/dotfiles/
