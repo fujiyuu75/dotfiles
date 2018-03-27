@@ -65,4 +65,4 @@ nmap <Esc><Esc> :nohlsearch<CR><Esc>
 
 " 設定系
 " viminfoの場所をdotfilesにする。
-set viminfo+=n~/dotfiles/
+set viminfo+=n/Users/y_fujikawa/dotfiles/

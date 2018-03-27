@@ -13,7 +13,9 @@
 [mergetool "sourcetree"]
 	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
 	trustExitCode = true
-[alias]
+[url "github:"]
+    InsteadOf = https://github.com/
+    InsteadOf = git@github.com:
 [alias]
 	a = add
 	aa = add --all
@@ -31,4 +33,4 @@
 	p = push
 	po = push origin
 	s = status --short --branch
-  	ss = !git stash list && git status --short --branch
+	ss = !git stash list && git status --short --branch
