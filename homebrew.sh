@@ -12,25 +12,26 @@ echo "ok. run brew upgrade..."
 brew upgrade --all
 
 formulas=(
-    git
-    curl
-    tree
-    cask
-    peco
-    node
-    python3
-    mecab
-    mecab-ipadic
     arpack
     autoconf
+    curl
+    cask
+    coreutils
     fontconfig
     freetype
+    git
+    hdf5
+    httpie
+    mecab
+    mecab-ipadic
+    node
+    peco
+    python3
     pyenv
     pyenv-virtualenv
     socat
+    tree
     zsh
-    httpie
-    hdf5
     wget
 )
 
