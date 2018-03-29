@@ -13,7 +13,7 @@ which brew >/dev/null 2>&1 && brew update
 
 echo "ok. run brew upgrade..."
 
-brew upgrade --all
+brew upgrade
 
 formulas=(
     arpack
@@ -21,6 +21,7 @@ formulas=(
     curl
     cask
     coreutils
+    diff-so-fancy
     fontconfig
     freetype
     git
@@ -40,11 +41,7 @@ formulas=(
 )
 
 "brew tap..."
-brew tap homebrew/dupes
-brew tap homebrew/versions
-brew tap homebrew/homebrew-php
-brew tap homebrew/apache
-brew tap sanemat/font
+brew tap caskroom/fonts
 
 echo "start brew install apps..."
 for formula in "${formulas[@]}"; do
