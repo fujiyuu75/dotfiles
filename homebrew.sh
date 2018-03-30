@@ -40,7 +40,7 @@ formulas=(
     wget
 )
 
-"brew tap..."
+echo "brew tap..."
 brew tap caskroom/fonts
 
 echo "start brew install apps..."
