@@ -1,6 +1,8 @@
 [user]
 	name = fujiyuu75
 	email = fujiyuu75@gmail.com
+[personal]
+token = 6135313285a2c646ee0dacc309190e43ec8128f9
 [core]
 	excludesfile = /Users/y_fujikawa/.gitignore_global
 	pager = diff-so-fancy | less --tabs=4 -RFX
@@ -34,3 +36,4 @@
 	po = push origin
 	s = status --short --branch
 	ss = !git stash list && git status --short --branch
+  hub-new-private-repo = "!REPO=$(basename $PWD) GHUSER=$(git config --get user.name) GHTOKEN=$(git config --get personal.token); git init; curl -u $GHUSER:$GHTOKEN https://api.github.com/user/repos -d {\\\"name\\\":\\\"$REPO\\\"\\,\\\"private\\\":\\\"true\\\"} --fail; git remote add origin git@github.com:$GHUSER/$REPO.git; git add .; git commit -m 'first commit'; git push -u origin master"

@@ -25,12 +25,19 @@ eval "$(pyenv virtualenv-init -)"
 export PATH="$HOME/.rbenv/bin:$PATH"
 eval "$(rbenv init -)"
 
+# nodenv
+export PATH="$HOME/.nodenv/bin:$PATH"
+eval "$(nodenv init -)"
+
 # android
 export PATH="$HOME/Desktop/dex2jar-0.0.9.9/dex2jar.bat:$PATH"
 export PATH="/Applications/android-ndk-r9i:$PATH"
 export PATH="/Applications/android-sdk-r24.2-macosx/platform-tools:$PATH"
 export PATH="/Applications/android-sdk-r24.2-macosx/tools:$PATH"
 export PATH="$HOME/git_repos/library/android:$PATH"
+
+# homebrew
+alias brew="env PATH=${PATH/\/Users\/y_fujikawa\/\.pyenv\/shims:/} brew"
 
 #
 # History setting.
@@ -115,3 +122,13 @@ if [ -f '/Users/y_fujikawa/y/google-cloud-sdk/path.zsh.inc' ]; then source '/Use
 
 # The next line enables shell command completion for gcloud.
 if [ -f '/Users/y_fujikawa/y/google-cloud-sdk/completion.zsh.inc' ]; then source '/Users/y_fujikawa/y/google-cloud-sdk/completion.zsh.inc'; fi
+
+# tabtab source for serverless package
+# uninstall by removing these lines or running `tabtab uninstall serverless`
+[[ -f /Users/y_fujikawa/Develop/develop/uncovertruth/ca/ca-infra/node_modules/tabtab/.completions/serverless.zsh ]] && . /Users/y_fujikawa/Develop/develop/uncovertruth/ca/ca-infra/node_modules/tabtab/.completions/serverless.zsh
+# tabtab source for sls package
+# uninstall by removing these lines or running `tabtab uninstall sls`
+[[ -f /Users/y_fujikawa/Develop/develop/uncovertruth/ca/ca-infra/node_modules/tabtab/.completions/sls.zsh ]] && . /Users/y_fujikawa/Develop/develop/uncovertruth/ca/ca-infra/node_modules/tabtab/.completions/sls.zsh
+# tabtab source for slss package
+# uninstall by removing these lines or running `tabtab uninstall slss`
+[[ -f /Users/y_fujikawa/Develop/develop/uncovertruth/ca/ca-infra/node_modules/tabtab/.completions/slss.zsh ]] && . /Users/y_fujikawa/Develop/develop/uncovertruth/ca/ca-infra/node_modules/tabtab/.completions/slss.zsh
